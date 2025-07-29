@@ -1,19 +1,19 @@
-'use client'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { Cloud, Thermometer, Droplets, Wind } from 'lucide-react'
-import { useToast } from "@/hooks/use-toast"
+'use client';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Cloud, Thermometer, Droplets, Wind } from 'lucide-react';
+import { useToast } from "@/hooks/use-toast";
 
 export default function Home() {
-  const { toast } = useToast()
-  
+  const { toast } = useToast();
+
   return (
     <div className="min-h-full">
       <section className="container mx-auto px-4 pt-24 pb-20">
         <div className="max-w-[800px] mx-auto text-center">
           <h1 className="text-5xl font-bold tracking-tight lg:text-6xl mb-6">
-            Weather Forecast App
+            Weather Forecast Site
           </h1>
           <p className="mt-6 text-xl text-muted-foreground max-w-[600px] mx-auto mb-10">
             Get detailed weather information, forecasts, and alerts for any location worldwide.
@@ -95,6 +95,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
-  )
+    </div>);
+
 }
